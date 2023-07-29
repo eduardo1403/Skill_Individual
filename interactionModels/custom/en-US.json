@@ -1,0 +1,98 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "goodbay",
+            "adios",
+            "hasta luego"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayudita",
+            "helpme",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "DonasIntent",
+          "samples": [
+            "quiero donas",
+            "dona",
+            "quiero una dona"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "CatalogoIntent",
+          "samples": [
+            "ver mas",
+            "quiero ver mas",
+            "quiero ver mas donas"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "dona",
+              "type": "sabores"
+            }
+          ],
+          "name": "StockIntent",
+          "samples": [
+            "quiero la de {dona}",
+            "quiero de {dona}",
+            "quier una de {dona}",
+            "{dona}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "coco"
+              }
+            },
+            {
+              "name": {
+                "value": "azucar"
+              }
+            },
+            {
+              "name": {
+                "value": "chocolate"
+              }
+            },
+            {
+              "name": {
+                "value": "chispas de chocolate"
+              }
+            },
+            {
+              "name": {
+                "value": "coco y glaceado"
+              }
+            }
+          ],
+          "name": "sabores"
+        }
+      ],
+      "invocationName": "donut shop"
+    }
+  }
+}

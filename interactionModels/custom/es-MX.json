@@ -1,0 +1,85 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "adios",
+            "hasta luego"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "necesito ayuda",
+            "ayudita",
+            "helpme",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "alto",
+            "cierra la skill"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "CatalogoIntent",
+          "samples": [
+            "quiero ver más donas",
+            "muestra el catálogo de donas",
+            "muestra el catalogo de donas"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "dona",
+              "type": "sabores"
+            }
+          ],
+          "name": "StockIntent",
+          "samples": [
+            "compraré la de {dona}",
+            "comprare la de {dona}",
+            "muestra la de {dona}",
+            "quiero una de {dona}",
+            "quiero la de {dona}",
+            "quiero de {dona}",
+            "{dona}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "fresa"
+              }
+            },
+            {
+              "name": {
+                "value": "azucar"
+              }
+            },
+            {
+              "name": {
+                "value": "chocolate"
+              }
+            }
+          ],
+          "name": "sabores"
+        }
+      ],
+      "invocationName": "tienda de donas"
+    }
+  }
+}
